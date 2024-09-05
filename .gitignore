@@ -1,0 +1,5 @@
+# Ignorer node_modules
+electron-app/node_modules/
+
+# Ignorer les fichiers générés
+electron-app/dist/mac-arm64
