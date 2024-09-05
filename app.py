@@ -9,7 +9,7 @@ data_folder = "data"
 if not os.path.exists(data_folder):
     os.makedirs(data_folder)
 
-# Barre latérale pour coller le texte Markdown
+
 st.sidebar.title("Ajouter un rapport nutritionnel")
 st.sidebar.text("ChatGPT imput")
 markdown_input = st.sidebar.text_area("Collez votre texte Markdown ici", height=300)
