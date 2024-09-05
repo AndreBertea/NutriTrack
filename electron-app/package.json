@@ -1,15 +1,43 @@
 {
   "name": "electron-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "NutriTrack Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "keywords": [],
-  "author": "",
+  "author": "BarBar-DD",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^32.0.2"
+
+
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  },
+  "build": {
+    "appId": "com.nutrack.app",
+    "productName": "NutriTrack",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "nutrak.icns"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "nutrak.ico"
+    },
+    "linux": {
+      "target": "AppImage",
+      "icon": "nutrak.png"
+    }
   }
 }

@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.nutrack.app
+productName: NutriTrack
+files:
+  - filter:
+      - '**/*'
+      - '!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}'
+mac:
+  target: dmg
+  icon: nutrak.icns
+win:
+  target: nsis
+  icon: nutrak.ico
+linux:
+  target: AppImage
+  icon: nutrak.png
+electronVersion: 32.0.2

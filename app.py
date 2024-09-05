@@ -11,7 +11,7 @@ if not os.path.exists(data_folder):
 
 
 st.sidebar.title("Ajouter un rapport nutritionnel")
-st.sidebar.text("ChatGPT imput")
+st.sidebar.text("ChatGPT ")
 markdown_input = st.sidebar.text_area("Collez votre texte Markdown ici", height=300)
 
 # Sauvegarder le texte collé sous forme de fichier Markdown avec la date du jour
