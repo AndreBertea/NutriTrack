@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 import os
 from datetime import datetime
 
-# Création du dossier "data" s'il n'existe pas
+# Création du dossier "data" s'il n'existe pa
 data_folder = "data"
 if not os.path.exists(data_folder):
     os.makedirs(data_folder)
 
 
 st.sidebar.title("Ajouter un rapport nutritionnel")
-st.sidebar.text("ChatGPT imput ")
+st.sidebar.text("ChatGPT impt ")
 markdown_input = st.sidebar.text_area("Collez votre texte Markdown ici", height=300)
 
 # Sauvegarder le texte collé sous forme de fichier Markdown avec la date du jour
