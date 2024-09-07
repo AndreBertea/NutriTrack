@@ -1,3 +1,11 @@
 streamlit
 pandas
 matplotlib
+yfinance
+plotly
+statsmodels
+tensorflow
+torch
+transformers
+scikit-learn
+numpy
